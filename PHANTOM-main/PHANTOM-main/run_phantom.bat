@@ -1,0 +1,13 @@
+@echo off
+cd /d "F:\internship protal\ai hackathon\phantom"
+echo Installing dependencies...
+python -m pip install -r requirements.txt -q
+echo.
+echo Starting target app in background...
+start python "F:\internship protal\ai hackathon\phantom\target_app\app.py"
+echo.
+echo Waiting 5 seconds for app to start...
+timeout /t 5 /nobreak
+echo.
+echo Running PHANTOM scan...
+python main.py 127.0.0.1 ./target_app

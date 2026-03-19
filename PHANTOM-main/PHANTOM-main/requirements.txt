@@ -1,0 +1,14 @@
+google-genai
+chromadb<1.0
+onnxruntime==1.17.1
+python-nmap
+semgrep
+bandit
+requests
+python-dotenv
+fastapi
+uvicorn
+rich
+pydantic
+flask==2.3.0
+shodan
